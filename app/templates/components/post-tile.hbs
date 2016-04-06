@@ -1,0 +1,7 @@
+<li>{{#link-to 'trash' trash.id}}${{trash.price}} - {{trash.title}} Type: {{trash.category.name}} {{/link-to}}
+  {{#if isImageShowing}}
+    <p><img src={{trash.image}} {{action 'imageHide'}}></p>
+  {{else}}
+    <button {{action 'imageShow'}}>Image</button>
+  {{/if}}
+</li>

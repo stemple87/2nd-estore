@@ -1,0 +1,34 @@
+<!-- <h1> Categories </h1> -->
+
+<!-- <h2> Available Trashes </h2> -->
+
+<!-- <ul>
+  {{#each model.trashes as |trash|}}
+    {{trash-tile trash=trash}} {{trash-cost trash}}
+  {{/each}}
+</ul> -->
+
+<!-- <ul>
+  {{#each model.users as |user|}}
+    <p>user.username LSKDJFS:DLKF:SDLK</p>
+  {{/each}}
+</ul> -->
+
+
+<h2> Categories </h2>
+
+<ul>
+  {{#each model.cities as |category|}}
+    <li>{{category-popularity category}}{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{new-category categoryToSave="saveCategory"}}
+
+<hr>
+
+
+{{user-update update=update}}
+<hr>
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}

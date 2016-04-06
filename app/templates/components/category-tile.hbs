@@ -1,0 +1,11 @@
+<h4>Location: {{fullLocation}}</h4>
+
+<h3>Trashes available in {{category.name}}:</h3>
+
+<ul>
+  {{#each sortedTrashes as |trash|}}
+    {{trash-tile trash=trash}}
+  {{/each}}
+</ul>
+
+<button {{action 'destroyCategory' category}}>Delete Category</button>

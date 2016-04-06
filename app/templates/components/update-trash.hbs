@@ -1,0 +1,35 @@
+{{#if updatePostForm}}
+  <h4>Update {{trash.owner}}'s {{trash.type}}</h4>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="author">Author</label>
+          {{input value=author id="author" placeholder=trash.author}}
+        </div>
+
+        <div class="form-group">
+          <label for="title">Title</label>
+          {{input value=title id="title" placeholder=trash.title.name}}
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image</label>
+          {{input value=image id="image" placeholder=trash.bedrooms}}
+        </div>
+
+        <div class="form-group">
+          <label for="body">Body</label>
+          {{input value=body id="body" placeholder=trash.image}}
+        </div>
+
+        <div class="form-group">
+          <label for="price">Price</label>
+          {{input value=price id="price" placeholder=trash.price}}
+        </div>
+
+        <button {{action 'update' trash}}>Save</button>
+      </form>
+    </div>
+{{else}}
+    <button {{action 'updatePostForm'}}>Update</button>
+{{/if}}
