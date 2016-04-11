@@ -1,7 +1,12 @@
-# Super-trashes
+# _E-store_
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _this is an e-store application_
+
+#### By _**Simon Temple**_
+
+## Description
+
+This is an e-store application that will eventually have a cart where customers can add items and then check them out.
 
 ## Prerequisites
 
